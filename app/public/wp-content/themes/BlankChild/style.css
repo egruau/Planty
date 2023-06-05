@@ -102,7 +102,7 @@ text-decoration: none;
 /* ACCUEIL */
 
 .energie-plante-texte {
-    width: 500px;
+    /* width: 490px; */
     margin: auto;
 }
 
@@ -115,3 +115,27 @@ text-decoration: none;
 .home #container {
     background-color: #ECE2DA;
 }
+
+.entry-title,
+.post-edit-link {
+    display: none;
+}
+
+
+.home-notice-group,
+.home-group-canette,
+.energie-plant-group {
+    background-color: white;
+}
+
+.wp-block-image img {
+    height: auto;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.home-notice {
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
