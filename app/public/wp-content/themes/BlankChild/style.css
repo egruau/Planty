@@ -112,7 +112,8 @@ text-decoration: none;
     margin-right: auto;
 }
 
-.home #container {
+.home #container,
+.page-id-10 #container {
     background-color: #ECE2DA;
 }
 
@@ -135,7 +136,7 @@ text-decoration: none;
 }
 
 .home-notice {
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
