@@ -4,3 +4,39 @@
 [31-May-2023 08:41:02 UTC] PHP Warning:  dir(C:/Users/gruau/OneDrive/Documents/Openclassroom/Projet 6/app/public/wp-content/upgrade/wordpress-6.2.2-fr_fr/wordpress/wp-includes/js/tinymce/plugins/tabfocus/): Failed to open directory: No such file or directory in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 626
 [31-May-2023 08:41:02 UTC] PHP Warning:  dir(C:/Users/gruau/OneDrive/Documents/Openclassroom/Projet 6/app/public/wp-content/upgrade/wordpress-6.2.2-fr_fr/wordpress/wp-includes/js/tinymce/plugins/wpeditimage/): Le chemin d’accès spécifié est introuvab (code: 3) in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 626
 [31-May-2023 08:41:02 UTC] PHP Warning:  dir(C:/Users/gruau/OneDrive/Documents/Openclassroom/Projet 6/app/public/wp-content/upgrade/wordpress-6.2.2-fr_fr/wordpress/wp-includes/js/tinymce/plugins/wpeditimage/): Failed to open directory: Permission denied in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 626
+[09-Jun-2023 16:00:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘wpcf7_autop_or_not’" in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php:13
+Stack trace:
+#0 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-settings.php(591): include()
+#1 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-config.php(102): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-load.php(50): require_once('C:\\Users\\gruau\\...')
+#3 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-blog-header.php(13): require_once('C:\\Users\\gruau\\...')
+#4 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#5 {main}
+  thrown in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php on line 13
+[09-Jun-2023 16:00:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘wpcf7_autop_or_not’" in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php:13
+Stack trace:
+#0 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-settings.php(591): include()
+#1 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-config.php(102): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-load.php(50): require_once('C:\\Users\\gruau\\...')
+#3 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-blog-header.php(13): require_once('C:\\Users\\gruau\\...')
+#4 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#5 {main}
+  thrown in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php on line 13
+[09-Jun-2023 16:00:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘wpcf7_autop_or_not’" in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php:13
+Stack trace:
+#0 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-settings.php(591): include()
+#1 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-config.php(102): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-load.php(50): require_once('C:\\Users\\gruau\\...')
+#3 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-blog-header.php(13): require_once('C:\\Users\\gruau\\...')
+#4 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#5 {main}
+  thrown in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php on line 13
+[09-Jun-2023 16:00:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "‘wpcf7_autop_or_not’" in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php:13
+Stack trace:
+#0 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-settings.php(591): include()
+#1 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-config.php(102): require_once('C:\\Users\\gruau\\...')
+#2 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-load.php(50): require_once('C:\\Users\\gruau\\...')
+#3 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-blog-header.php(13): require_once('C:\\Users\\gruau\\...')
+#4 C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\index.php(17): require('C:\\Users\\gruau\\...')
+#5 {main}
+  thrown in C:\Users\gruau\OneDrive\Documents\Openclassroom\Projet 6\app\public\wp-content\themes\BlankChild\functions.php on line 13
