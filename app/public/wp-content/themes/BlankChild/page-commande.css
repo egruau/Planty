@@ -175,7 +175,11 @@
 
 /* MEDIAS QUERIES */
 
-@media all and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
+
+    .page-id-13 {
+        width: auto;
+    }
 
     .commande-gouts {
         /* margin: 39px 10px 0px 10px; */
@@ -197,3 +201,30 @@
 
 }
 
+
+@media screen and (max-width: 650px) {
+
+/* .page-id-13 #wrapper {
+    width: auto;
+} */
+
+.screen-reader-text {
+    width: auto;
+    font-size: 80%;
+}
+
+    .informations-livraison {
+        display: grid;
+    }
+
+    .livraison {
+        padding-top: 70px;
+    }
+
+    .commande-titre {
+
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
