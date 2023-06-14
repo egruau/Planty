@@ -1,15 +1,16 @@
+/* COMMANDER */
 
-/* GENERAL */
-.page-commander #container {
+.page-id-13 #container {
     background-color: #3B8E46;
     padding-top: 40px;
     padding-bottom: 93px;
 }
 
-.page-commander-titre {
-    color: white;
-    font-size: 38px;
+.commande-titre {
+    font-size: 30px;
+    font-weight: 500;
 }
+
 
 .formulaire-commande {
     display: flex;
@@ -21,36 +22,8 @@
     margin-top: 70px;
 }
 
-.commande-titre {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.boutton-commande:hover,
-.boutton-quantite:hover {
-    background-color: #C02E44;
-}
-
-.page-commander .wpcf7-not-valid-tip {
-    position: absolute;
-    color: #8F0000;
-    font-weight: 600;
-    overflow: visible;
-    min-width: 160px;
-}
-
-.page-commander .wpcf7-response-output {
-    color: white;
-    font-weight: 600;
-    text-align: center;
-}
-
-.page-commander .wpcf7 form.invalid .wpcf7-response-output {
-    border-color: #8F0000;
-}
-
-
 /* "VOTRE COMMANDE" */
+
 .votre-commande {
     display: flex;
     flex-direction: column;
@@ -116,6 +89,7 @@
     border-bottom: 1px solid white;
 }
 
+
 .boutton-quantite {
     color: white;
     border: none;
@@ -124,6 +98,13 @@
     height: 56px;
     border-radius: 5px;
 }
+
+.boutton-commande:hover,
+.boutton-quantite:hover {
+    background-color: #C02E44;
+}
+
+
 
 /* "VOS INFORMATIONS - LIVRAISON" */
 .informations-livraison {
@@ -152,37 +133,57 @@
     gap: 30px 0px;
 }
 
-.informations-livraison .label-form {
+.label-form {
     width: 100%;
     width: 380px;
     height: 71px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-    border-radius: 7px;
+    border-radius: 7px !important;
     border: none;
     margin-top: 13px;
     font-size: 20px;
 }
 
-.case-boutton-commande {
+.case-boutton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.case-boutton-commande .boutton-commande {
+.boutton-commande {
     width: 198px;
     height: 55px;
     background-color: #E0B9B4;
-    border-radius: 5px;
+    border-radius: 5px !important;
     border: none;
     color: white;
     font-size: 15px;
     margin-top: 44px;
 }
 
-.case-boutton-commande .wpcf7-spinner {
+.wpcf7-spinner {
     display: none;
+}
+
+.wpcf7-not-valid-tip {
+    position: absolute;
+    /* background-color: red; */
+    color: #8F0000;
+    /* font-size: 2em; */
+    font-weight: 600;
+    overflow: visible;
+    min-width: 160px;
+}
+
+.page-id-13 .wpcf7-response-output {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.page-id-13 .wpcf7 form.invalid .wpcf7-response-output {
+    border-color: #8F0000;
 }
 
 
@@ -190,7 +191,7 @@
 
 @media only screen and (max-width: 900px) {
 
-    .page-commander {
+    .page-id-13 {
         width: auto;
     }
 
@@ -203,7 +204,7 @@
         justify-content: space-around;
     }
 
-    .informations-livraison .label-form {
+    .label-form {
         width: 15em;
     }
 
@@ -211,6 +212,11 @@
 
 
 @media screen and (max-width: 650px) {
+
+    .screen-reader-text {
+        width: auto;
+        font-size: 80%;
+    }
 
     .informations-livraison {
         display: grid;
@@ -221,13 +227,21 @@
     }
 
     .commande-titre {
+
         font-size: 30px;
         text-align: center;
         font-weight: 500;
     }
+}
 
-    .page-commander .page-commander-titre {
-        font-size: 1.5em;
+@media screen and (max-width: 454px) {
+
+    .page-id-13 #container {
+        width: 100%;
     }
 
+    .wp-block-heading.has-text-align-center.has-white-color.has-text-color {
+        size: 10px;
+        font-size: 23px !important;
+    }
 }

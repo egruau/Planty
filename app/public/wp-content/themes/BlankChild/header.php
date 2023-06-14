@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <!-- <meta name="viewport" content="width=device-width" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <?php wp_head(); ?>
@@ -11,14 +10,13 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
+
     <div id="wrapper" class="hfeed">
         <header id="header" role="banner">
             <div id="branding">
                 <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                     <div class="logo">
-                        <?php
-        if (function_exists('the_custom_logo')) { the_custom_logo(); }
-        ?>
+                        <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
                     </div>
                 </div>
             </div>

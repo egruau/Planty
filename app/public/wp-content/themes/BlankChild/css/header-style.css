@@ -1,6 +1,6 @@
+/* Votre code CSS existant */
 
-
-/* HEADER */
+/* Styles pour le menu principal */
 
 #header {
     width: 100%;
@@ -10,7 +10,7 @@
     height: 80px;
 }
 
-.logo { 
+.logo {
     max-width: 200px;
     min-width: 200px;
     width: auto;
@@ -27,8 +27,7 @@
     min-width: 200px;
 }
 
-
-.menu { 
+#header .menu {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -41,28 +40,33 @@
     align-items: center;
 }
 
-.menu-navigation-container {
+#header .menu-navigation-container {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu a {
+#header .menu a {
     color: black;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.menu a:hover {
+#header .menu a:hover {
     font-weight: 700;
+    font-size: 13px;
+    position: relative;
+    left: 3px;
+    bottom: 3px;
 }
 
-.menu li {
+#header .menu li {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu li a {
+#header .menu li a {
     text-align: center;
     height: 100%;
     padding: 0px 20px;
@@ -70,34 +74,114 @@
     align-items: center;
 }
 
-
-.menu-item-57 {
+#header .menu li:last-child {
     background-color: #DC9F96;
 }
 
-.menu-item-57 a {
+#header .menu li:last-child a {
     color: white;
-    padding: 0 60px !important;
+    font-weight: 700;
+    padding: 0 60px;
 }
 
-/* @media screen and (max-width: 768px) {
+#header .menu li:last-child a:hover {
+    font-size: 16px;
+    background-color: #C02E44;
+    position: inherit;
+}
+
+
+/* ******************************************* */
+/* RESPONSIVE UNIQUEMENT */
+/* Cacher le menu burger sur les écrans larges */
+#header #menu-toggle {
+    display: none;
+}
+
+#header .menu-label {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* Cacher le menu principal */
+    #header #menu {
+        display: none;
+    }
+
+    /* Afficher le menu burger via l'icône */
+    #header .menu-label {
+        display: block;
+        font-size: 20px;
+        color: #000;
+        margin-right: 20px;
+    }
 
     #header {
-        flex-direction: column;
-        height: 100px;
-    }
-
-    .logo {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    #menu {
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .menu {
+        height: fit-content;
+        row-gap: 1em;
         flex-wrap: wrap;
+        line-height: 80px;
     }
-} */
+
+    #header .menu {
+        width: 100%;
+    }
+
+    #header .menu li {
+        width: 100%;
+        justify-content: center;
+        line-height: 5em;
+    }
+
+    #header .menu li a {
+        display: block;
+        width: 100%;
+        font-size: 1.25em;
+        padding: none;
+        font-weight: 400;
+    }
+
+
+    #header .menu li a:hover {
+        background-color: #C02E44;
+        font-size: 1.25em;
+        position: static;
+        font-weight: 400;
+    }
+
+
+    #header .menu li:last-child a {
+        padding: 0px;
+        font-weight: 400;
+    }
+
+    #header .menu li:nth-child(2n) {
+        background-color: white;
+    }
+
+    #header .menu li:nth-child(2n+1) {
+        background-color: #DC9F96;
+    }
+
+    #header .menu li:nth-child(2n) a {
+        color: #000000;
+    }
+
+    #header .menu li:nth-child(2n+1) a {
+        color: white;
+    }
+
+    /* Styles pour le menu déroulant */
+    #header #menu-toggle:checked~#menu {
+        display: block;
+        width: 100%;
+    }
+
+    #header .menu {
+        flex-direction: column;
+        height: max-content;
+    }
+
+}
