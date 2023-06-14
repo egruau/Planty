@@ -25,9 +25,8 @@ BlankSlate is distributed under the terms of the GNU GPL
 body {
     font-family: 'Syne' !important;
     max-width: 1440px;
-    width: fit-content;
+    width: 100%;
     margin: auto;
-    /* background-color: #DC9F96; */
 }
 
 
@@ -235,7 +234,7 @@ margin-top: -225px;
 
 
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     body {
         width: fit-content;
     }
@@ -248,4 +247,4 @@ margin-top: -225px;
         width: 50%;
     }
 }
-
+ */

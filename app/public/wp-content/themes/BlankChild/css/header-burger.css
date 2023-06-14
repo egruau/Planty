@@ -1,0 +1,98 @@
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo { 
+    max-width: 200px;
+    min-width: 200px;
+    width: auto;
+    margin-left: 35px;
+}
+
+.custom-logo {
+    width: 100%;
+    height: auto;
+}
+
+.custom-logo img {
+    min-width: 200px;
+}
+
+#menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.menu { 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+#menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.burger::before,
+.burger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.burger::before {
+    top: -10px;
+}
+
+.burger::after {
+    top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu.open .burger {
+        transform: rotate(45deg);
+    }
+
+    .burger-menu.open .burger::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .burger-menu.open .burger::after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .burger-menu.open ~ #menu {
+        display: block;
+    }
+}

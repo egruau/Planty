@@ -20,9 +20,6 @@
                     ?>
                     </div> 
                 </div>
-                <!-- <div id="site-description" <?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>>
-                    <?php bloginfo( 'description' ); ?>
-                </div> -->
             </div>
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <?php wp_nav_menu( array( 'theme_location' => 'primary_menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
