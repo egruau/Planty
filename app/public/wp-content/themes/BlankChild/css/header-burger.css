@@ -1,3 +1,6 @@
+/* Votre code CSS existant */
+
+/* Styles pour le menu principal */
 #header {
     width: 100%;
     display: flex;
@@ -6,11 +9,12 @@
     height: 80px;
 }
 
-.logo { 
+.logo {
     max-width: 200px;
     min-width: 200px;
     width: auto;
     margin-left: 35px;
+    height: 100%;
 }
 
 .custom-logo {
@@ -22,12 +26,7 @@
     min-width: 200px;
 }
 
-#menu-wrapper {
-    display: flex;
-    align-items: center;
-}
-
-.menu { 
+.menu {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -40,59 +39,88 @@
     align-items: center;
 }
 
-.burger-menu {
+.menu-navigation-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    font-weight: 700;
+}
+
+.menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    text-align: center;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-57 {
+    background-color: #DC9F96;
+}
+
+.menu-item-57 a {
+    color: white;
+    padding: 0 60px !important;
+}
+
+/* Cacher le menu burger sur les écrans larges */
+#menu-toggle {
     display: none;
 }
 
-.burger {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.menu-label {
+    display: none;
 }
 
-.burger::before,
-.burger::after {
-    content: "";
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    transition: transform 0.3s ease;
-}
-
-.burger::before {
-    top: -10px;
-}
-
-.burger::after {
-    top: 10px;
-}
-
+/* Styles pour le menu responsive */
 @media screen and (max-width: 1024px) {
+
+    /* Cacher le menu principal */
     #menu {
         display: none;
     }
 
-    .burger-menu {
+    /* Afficher le menu burger */
+    /* #menu-toggle {
         display: flex;
+        align-items: center;
+        cursor: pointer;
+    } */
+
+    /* Afficher le texte "Menu" */
+    .menu-label {
+        display: block;
+    }
+    .menu-label {
+        font-size: 20px; /* Taille de l'icône */
+        color: #000; /* Couleur de l'icône */
+      }
+
+    /* Checkbox à cot */
+
+    /* Styles pour le texte du menu burger */
+    #menu-toggle .menu-label {
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
     }
 
-    .burger-menu.open .burger {
-        transform: rotate(45deg);
-    }
-
-    .burger-menu.open .burger::before {
-        transform: translateY(10px) rotate(45deg);
-    }
-
-    .burger-menu.open .burger::after {
-        transform: translateY(-10px) rotate(-45deg);
-    }
-
-    .burger-menu.open ~ #menu {
+    /* Styles pour le menu déroulant */
+    #menu-toggle:checked~#menu {
         display: block;
     }
 }
