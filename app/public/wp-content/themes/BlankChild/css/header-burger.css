@@ -1,6 +1,7 @@
 /* Votre code CSS existant */
 
 /* Styles pour le menu principal */
+
 #header {
     width: 100%;
     display: flex;
@@ -39,28 +40,33 @@
     align-items: center;
 }
 
-.menu-navigation-container {
+#header .menu-navigation-container {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu a {
+#header .menu a {
     color: black;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.menu a:hover {
+#header .menu a:hover {
     font-weight: 700;
+    font-size: 13px;
+    position: relative;
+    left: 3px;
+    bottom: 3px;  
 }
 
-.menu li {
+#header .menu li {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu li a {
+#header .menu li a {
     text-align: center;
     height: 100%;
     padding: 0px 20px;
@@ -68,59 +74,117 @@
     align-items: center;
 }
 
-.menu-item-57 {
+#header .menu li:last-child {
     background-color: #DC9F96;
 }
 
-.menu-item-57 a {
+#header .menu li:last-child a {
     color: white;
-    padding: 0 60px !important;
+    font-weight: 700;
+    padding: 0 60px;
 }
 
+#header .menu li:last-child a:hover {
+    font-size: 16px;
+    background-color: #C02E44;
+    position:inherit;
+}
+
+
+/* ******************************************* */
+/* RESPONSIVE UNIQUEMENT */
 /* Cacher le menu burger sur les écrans larges */
-#menu-toggle {
+#header #menu-toggle {
     display: none;
 }
 
-.menu-label {
+#header .menu-label {
     display: none;
 }
 
-/* Styles pour le menu responsive */
+
 @media screen and (max-width: 1024px) {
 
     /* Cacher le menu principal */
-    #menu {
+    #header #menu {
         display: none;
     }
 
-    /* Afficher le menu burger */
-    /* #menu-toggle {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    } */
-
-    /* Afficher le texte "Menu" */
-    .menu-label {
+    /* Afficher le menu burger via l'icône */
+    #header .menu-label {
         display: block;
+        font-size: 20px;
+        color: #000;
+        margin-right: 20px;
     }
-    .menu-label {
-        font-size: 20px; /* Taille de l'icône */
-        color: #000; /* Couleur de l'icône */
-      }
 
-    /* Checkbox à cot */
+    #header {
+        height: fit-content;
+        row-gap: 1em;
+        flex-wrap: wrap;
+        line-height: 80px;
+    }
 
-    /* Styles pour le texte du menu burger */
-    #menu-toggle .menu-label {
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 10px;
+    #header .menu {
+        width: 100%;
+    }
+
+    #header .menu li {
+        width: 100%;
+        justify-content: center;
+        line-height: 5em;
+    }
+
+    #header .menu li a {
+        display: block;
+        width: 100%;
+        font-size: 1.25em;
+        padding: none;
+        font-weight: 400;
+    }
+
+
+    #header .menu li a:hover {
+        background-color: #C02E44;
+        font-size: 1.25em;
+        position: static;
+        font-weight: 400;
+    }
+
+
+#header .menu li:last-child a {
+    padding: 0px;
+    font-weight: 400;
+}
+    #header .menu li:nth-child(2n) {
+    background-color: white;
+        /* Couleur de fond pour les éléments pairs */
+    }
+
+    #header .menu li:nth-child(2n+1) {
+        background-color: #DC9F96;
+        /* Couleur de fond pour les éléments impairs */
+    }
+
+    #header .menu li:nth-child(2n) a {
+        color: #000000;
+        /* Couleur de texte pour les liens dans les éléments pairs */
+    }
+
+    #header .menu li:nth-child(2n+1) a {
+        color: white;
+        /* Couleur de texte pour les liens dans les éléments impairs */
     }
 
     /* Styles pour le menu déroulant */
-    #menu-toggle:checked~#menu {
+    #header #menu-toggle:checked~#menu {
         display: block;
+        width: 100%;
     }
+
+    #header .menu {
+        flex-direction: column;
+        height: max-content;
+    }
+
 }

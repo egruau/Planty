@@ -12,21 +12,6 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div id="wrapper" class="hfeed">
-        <!-- <header id="header" role="banner">
-            <div id="branding">
-                <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                    <div class="logo">
-                    <?php
-                    if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } 
-                    ?>
-                    </div> 
-                </div>
-            </div>
-            <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <?php wp_nav_menu( array( 'theme_location' => 'primary_menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-            </nav>
-        </header> -->
-
         <header id="header" role="banner">
             <div id="branding">
                 <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
@@ -37,16 +22,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="menu-responsive"> -->
             <input type="checkbox" id="menu-toggle" />
-            <!-- <label for="menu-toggle" class="menu-label">Menu</label> -->
-            <label for="menu-toggle" class="menu-label">
-  <i class="fas fa-bars"></i>
-</label>
+            <label for="menu-toggle" class="menu-label"> <i class="fas fa-bars"></i> </label>
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <?php wp_nav_menu(array('theme_location' => 'primary_menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
             </nav>
-        <!-- </div> -->
         </header>
 
 
