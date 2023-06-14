@@ -1,4 +1,3 @@
-
 /* COMMANDER */
 
 .page-id-13 #container {
@@ -8,7 +7,6 @@
 }
 
 .commande-titre {
-    /* margin-bottom: 29px; */
     font-size: 30px;
     font-weight: 500;
 }
@@ -22,8 +20,6 @@
     margin: auto;
     color: white;
     margin-top: 70px;
-    /* padding-bottom: 93px; */
-    /* align-items: center; */
 }
 
 /* "VOTRE COMMANDE" */
@@ -42,7 +38,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 39px;
-    /* gap: 30px 0px; */
 }
 
 .groupe-commande {
@@ -50,15 +45,14 @@
     flex-direction: column;
 }
 
-.quantite { 
+.quantite {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 14px;
-    /* flex-wrap: wrap; */
 }
 
-.quantite-total { 
+.quantite-total {
     display: flex;
     flex-direction: row;
 }
@@ -115,8 +109,6 @@
     justify-content: space-between;
     border-top: 1px solid white;
     padding-top: 53px;
-    /* margin-bottom: -30px; */
-    /* margin-top: 20px; */
 }
 
 .informations-livraison label {
@@ -129,24 +121,22 @@
     border-right: 1px solid white;
 }
 
-.informations, 
+.informations,
 .livraison {
     display: flex;
     flex-direction: column;
     gap: 30px 0px;
 }
 
-.label-form { 
-    width: 100%; 
+.label-form {
+    width: 100%;
     width: 380px;
     height: 71px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
     border-radius: 7px !important;
     border: none;
     margin-top: 13px;
-    /* margin-bottom: 30px; */
     font-size: 20px;
-    /* padding-bottom: 30px; */
 }
 
 .case-boutton {
@@ -160,16 +150,25 @@
     width: 198px;
     height: 55px;
     background-color: #E0B9B4;
-    border-radius: 5px !important ;
+    border-radius: 5px !important;
     border: none;
     color: white;
     font-size: 15px;
     margin-top: 44px;
-    /* margin: auto; */
 }
 
 .wpcf7-spinner {
     display: none;
+}
+
+.wpcf7-not-valid-tip {
+    position: absolute;
+    /* background-color: red; */
+    color: #8F0000;
+    /* font-size: 2em; */
+    font-weight: 600;
+    overflow: visible;
+    min-width: 160px;
 }
 
 
@@ -182,9 +181,6 @@
     }
 
     .commande-gouts {
-        /* margin: 39px 10px 0px 10px; */
-        /* justify-content: center; */
-        /* justify-content: space-around; */
         justify-content: space-evenly;
         gap: 2em;
     }
@@ -194,8 +190,6 @@
     }
 
     .label-form {
-        /* width: 75%; */
-        /* width: 320px; */
         width: 15em;
     }
 
@@ -204,14 +198,10 @@
 
 @media screen and (max-width: 650px) {
 
-/* .page-id-13 #wrapper {
-    width: auto;
-} */
-
-.screen-reader-text {
-    width: auto;
-    font-size: 80%;
-}
+    .screen-reader-text {
+        width: auto;
+        font-size: 80%;
+    }
 
     .informations-livraison {
         display: grid;
@@ -226,5 +216,17 @@
         font-size: 30px;
         text-align: center;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 454px) {
+
+    .page-id-13 #container {
+        width: 100%;
+    }
+
+    .wp-block-heading.has-text-align-center.has-white-color.has-text-color {
+        size: 10px;
+        font-size: 23px !important;
     }
 }
