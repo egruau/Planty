@@ -38,3 +38,17 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 		return $classes;
 	}
 	add_filter( 'body_class', 'custom_body_class' );
+
+
+	// function remove_group_inner_container_div() {
+	// 	// Check if Gutenberg is active
+	// 	if ( function_exists( 'register_block_type' ) ) {
+	// 		// Remove the wp-block-group__inner-container wrapper
+	// 		add_filter( 'render_block_core/group', function( $block_content, $block ) {
+	// 			$block_content = str_replace( '<div class="wp-block-group__inner-container">', '', $block_content );
+	// 			$block_content = str_replace( '</div></div>', '</div>', $block_content );
+	// 			return $block_content;
+	// 		}, 10, 2 );
+	// 	}
+	// }
+	// add_action( 'init', 'remove_group_inner_container_div' );

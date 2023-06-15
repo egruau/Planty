@@ -51,11 +51,14 @@ body {
 /* PAGES */
 
 /* ACCUEIL */
+
 .accueil-titre {
     padding-top: 80px;
     padding-bottom: 100px;
     max-width: 781px;
+    width:100%;
     margin: auto;
+    font-size: 2.25em;
 }
 
 .planty-boisson {
@@ -68,7 +71,7 @@ body {
 }
 
 .energie-plante-texte {
-    width: 490px;
+    max-width: 490px;
     margin: auto;
     padding-bottom: 60px;
 }
@@ -77,6 +80,45 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
 }
+
+.image-colonne-haut .wp-block-cover {
+    width: 394px;
+    height: 263px;
+}
+
+/* TEST BANNIERES */
+
+#groupe-bannieres {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+#groupe-bannieres .wp-block-group__inner-container {
+    display: flex;
+    flex-direction:column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 30px; 
+}
+
+#groupe-bannieres .wp-block-group__inner-container .groupe-double-bannieres .wp-block-group__inner-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#groupe-bannieres .banniere-gout {
+    width: 394px;
+    height: 263px;
+}
+
+.page-accueil #groupe-bannieres .wp-block-cover,
+.page-accueil #groupe-bannieres .wp-block-cover-image {
+    min-height: initial;
+}
+
+/* ******************** */
 
 .gout-texte {
     padding-bottom: 20px;
@@ -233,18 +275,31 @@ margin-top: -225px;
 }
 
 
+/* RESPONSIVE UNIQUEMENT */
 
-/* @media screen and (max-width: 400px) {
-    body {
-        width: fit-content;
+/* PAGE ACCUEIL  */
+@media screen and (max-width: 768px) {
+    .accueil-titre {
+        font-size: 2em;
     }
 
-    .home #container { 
-        background-color: blue;
+    .page-accueil #container {
+        z-index: 0;
+        padding: 0 10px;
     }
 
-    h1 {
-        width: 50%;
+    .page-accueil .energie-plant-group {
+        padding: 0 20px;
+    }
+
+    .energie-plante-texte {
+        text-align: justify;
     }
 }
- */
+
+@media screen and (max-width: 425px) {
+    .accueil-titre {
+        font-size: 1.5em;
+    }
+}
+
