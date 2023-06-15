@@ -1,0 +1,206 @@
+/* ACCUEIL */
+
+.accueil-titre {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    max-width: 781px;
+    width:100%;
+    margin: auto;
+    font-size: 2.25em;
+}
+
+.planty-boisson {
+    padding-bottom: 60px;
+}
+
+.energie-des-plantes { 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.energie-plante-texte {
+    max-width: 490px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.les-gouts-titre {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+/* TEST BANNIERES */
+
+.bannieres-texte {
+    overflow-wrap: anywhere;
+    font-size: 48px;
+}
+
+#groupe-bannieres {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* justify-content: space-around; */
+}
+
+#groupe-bannieres .wp-block-group__inner-container {
+    display: flex;
+    flex-direction:column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 30px; 
+}
+
+#groupe-bannieres .wp-block-group__inner-container .groupe-double-bannieres .wp-block-group__inner-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#groupe-bannieres .banniere-gout {
+    width: 394px;
+    height: 263px;
+}
+
+.page-accueil #groupe-bannieres .wp-block-cover,
+.page-accueil #groupe-bannieres .wp-block-cover-image {
+    min-height: initial;
+}
+
+/* ******************** */
+
+.gout-texte {
+    padding-bottom: 20px;
+}
+
+
+#accueil-boutton-commande {
+    padding-bottom: 80px;
+}
+
+#accueil-boutton-commande .wp-element-button {
+    width: 198px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #e0b9b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wp-element-button:hover {
+    background-color: #C02E44 ;
+}
+
+.accueil-avis {
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.image-colonne-haut,
+.image-colonne-bas {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-colonne-bas {
+    margin-top: 1.75em;
+}
+
+.wp-block-columns {
+    margin-bottom: 0px;
+}
+
+.home #container,
+.page-id-10 #container {
+    background-color: #ECE2DA;
+}
+
+.header {
+    display: none;
+}
+
+
+.accueil-groupe-avis,
+.energie-plant-group {
+    background-color: white;
+}
+
+.home .canettes-footer {
+    background-color: white;
+}
+
+.wp-block-image img {
+    height: auto;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.accueil-avis-client {
+    padding-top: 20px;
+    padding-right: 10px
+}
+
+/* TEST GRID PAS GRID */
+.accueil-avis-planty {
+    width: 196px;
+}
+/****************************/
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    #groupe-bannieres .banniere-gout {
+        width: 334px;
+        height: 223px;
+    }
+
+    .bannieres-texte {
+        font-size: 38px;
+    }
+
+    #groupe-test-grid .wp-block-group__inner-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .accueil-avis-complet {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .accueil-titre {
+        font-size: 2em;
+    }
+
+    .page-accueil .energie-plant-group {
+        padding: 0 20px;
+    }
+
+    .energie-plante-texte {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .accueil-titre {
+        font-size: 1.5em;
+    }
+
+    #groupe-bannieres .banniere-gout {
+        width: 197px;
+        height: 131px;
+    }
+
+    .bannieres-texte {
+        font-size: 24px;
+    }
+
+}
+
