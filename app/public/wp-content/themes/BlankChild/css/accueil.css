@@ -1,10 +1,17 @@
 /* ACCUEIL */
+.page-accueil #container {
+    background-color: #ECE2DA;
+}
 
+.page-accueil h2 {
+    font-size: 30px;
+}
+
+/* TITRE ET VISUEL CANETTE */
 .accueil-titre {
     padding-top: 80px;
     padding-bottom: 100px;
     max-width: 781px;
-    width:100%;
     margin: auto;
     font-size: 2.25em;
 }
@@ -13,65 +20,64 @@
     padding-bottom: 60px;
 }
 
-.energie-des-plantes { 
+/* ENERGIE DES PLANTES */
+.energie-plantes-groupe {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px ;
 }
 
-.energie-plante-texte {
+.energie-plantes-groupe .wp-block-group__inner-container {
+    display: grid;
+    row-gap: 40px;
+}
+
+.energie-plantes-texte {
     max-width: 490px;
     margin: auto;
-    padding-bottom: 60px;
 }
 
-.les-gouts-titre {
+
+/* LES GOUTS */
+
+.accueil-gouts-titre {
     padding-top: 50px;
     padding-bottom: 10px;
 }
 
-
-/* TEST BANNIERES */
-
-.bannieres-texte {
+.banniere-gout-texte {
     overflow-wrap: anywhere;
     font-size: 48px;
 }
 
-#groupe-bannieres {
+#accueil-bannieres-gouts {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
     margin-bottom: 30px;
-    /* justify-content: space-around; */
 }
 
-#groupe-bannieres .wp-block-group__inner-container {
+#accueil-bannieres-gouts .wp-block-group__inner-container {
     display: flex;
     flex-direction:column;
-    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 30px; 
 }
 
-#groupe-bannieres .wp-block-group__inner-container .groupe-double-bannieres .wp-block-group__inner-container {
+
+#accueil-bannieres-gouts .bannieres-gouts-groupe .wp-block-group__inner-container {
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 
-#groupe-bannieres .banniere-gout {
+#accueil-bannieres-gouts .banniere-gout {
     width: 394px;
     height: 263px;
 }
 
-.page-accueil #groupe-bannieres .wp-block-cover,
-.page-accueil #groupe-bannieres .wp-block-cover-image {
+.page-accueil #accueil-bannieres-gouts .wp-block-cover,
+.page-accueil #accueil-bannieres-gouts .wp-block-cover-image {
     min-height: initial;
-}
-
-/* ******************** */
-
-.gout-texte {
-    padding-bottom: 20px;
 }
 
 
@@ -89,81 +95,45 @@
     justify-content: center;
 }
 
-.wp-element-button:hover {
+#accueil-boutton-commande .wp-element-button:hover {
     background-color: #C02E44 ;
 }
 
-.accueil-avis {
-    margin: auto;
+
+
+/* AVIS CLIENTS + FOOTER */
+#accueil-avis-groupe .wp-block-group__inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 20px;
     padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.image-colonne-haut,
-.image-colonne-bas {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-colonne-bas {
-    margin-top: 1.75em;
-}
-
-.wp-block-columns {
-    margin-bottom: 0px;
-}
-
-.home #container,
-.page-id-10 #container {
-    background-color: #ECE2DA;
-}
-
-.header {
-    display: none;
-}
-
-
-.accueil-groupe-avis,
-.energie-plant-group {
-    background-color: white;
-}
-
-.home .canettes-footer {
-    background-color: white;
-}
-
-.wp-block-image img {
-    height: auto;
-    width: 100%;
-    vertical-align: bottom;
 }
 
 .accueil-avis-client {
-    padding-top: 20px;
-    padding-right: 10px
-}
-
-/* TEST GRID PAS GRID */
-.accueil-avis-planty {
+    row-gap: 11px;
     width: 196px;
 }
+
+.page-accueil .canettes-footer {
+    background-color: white;
+}
+
+
 /****************************/
-
-
 /* RESPONSIVE */
 
 @media screen and (max-width: 1024px) {
-    #groupe-bannieres .banniere-gout {
+    #accueil-bannieres-gouts .banniere-gout {
         width: 334px;
         height: 223px;
     }
 
-    .bannieres-texte {
+    .banniere-gout-texte {
         font-size: 38px;
     }
 
-    #groupe-test-grid .wp-block-group__inner-container{
+    #accueil-avis-groupe .wp-block-group__inner-container{
         flex-direction: column;
         justify-content: center;
     }
@@ -175,30 +145,41 @@
 
 @media screen and (max-width: 768px) {
 
-    .accueil-titre {
-        font-size: 2em;
+    .accueil-titre,
+    .page-accueil h2 {
+        font-size: 20px;
     }
 
-    .page-accueil .energie-plant-group {
-        padding: 0 20px;
+    .page-accueil h2 {
+        padding: 20px 0;
+    }
+
+    .page-accueil .energie-plantes-groupe {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .energie-plante-texte {
         text-align: justify;
     }
+
+    #accueil-avis-groupe .wp-block-group__inner-container {
+        padding: 20px 10px;
+    }
+
+    .page-accueil .canettes-footer {
+        padding-top: 30px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-    .accueil-titre {
-        font-size: 1.5em;
-    }
 
-    #groupe-bannieres .banniere-gout {
+    #accueil-bannieres-gouts .banniere-gout {
         width: 197px;
         height: 131px;
     }
 
-    .bannieres-texte {
+    .banniere-gout-texte {
         font-size: 24px;
     }
 

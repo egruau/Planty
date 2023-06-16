@@ -29,6 +29,19 @@ body {
     margin: auto;
 }
 
+.page-nous-rencontrer #container {
+    background-color: #ECE2DA;
+}
+
+.header {
+    display: none;
+}
+
+.wp-block-image img {
+    height: auto;
+    width: 100%;
+    vertical-align: bottom;
+}
 
 /* FOOTER */
 #footer {
