@@ -7,6 +7,7 @@ function theme_enqueue_styles(){
 	wp_enqueue_style('commander-style', get_stylesheet_directory_uri() . './css/commander.css');
 	wp_enqueue_style('header-style', get_stylesheet_directory_uri() . './css/header.css');
 	wp_enqueue_style('accueil-style', get_stylesheet_directory_uri() . './css/accueil.css');
+	wp_enqueue_style('nous-rencontrer-style', get_stylesheet_directory_uri() . './css/nous-rencontrer.css');
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap' ); 
 }
 

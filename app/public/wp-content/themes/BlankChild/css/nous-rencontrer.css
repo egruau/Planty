@@ -1,0 +1,253 @@
+/* NOUS RENCONTRER */
+
+p.text-contacter {
+    color: #000;
+}
+
+.rencontre-paragraphe {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.equipe-nom {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.equipe-complete {
+    padding-top: 46px;
+    padding-bottom: 80px;
+}
+
+.nous-contacter {
+    padding-top: 50px;
+}
+
+.nous-rencontrer-titre {
+    padding-top: 80px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form .wpforms-field-label {
+    font-size: 20px !important;
+    font-weight: 400;
+}
+
+.wpforms-container .wpforms-required-label { 
+    display: none;
+}
+
+/* div.wpforms-container-full input[type=text] {
+    width: 380px;
+    height: 71px;
+    
+} */
+.contact-form .wpforms-field-large {
+    /* width: 380px; */
+    height: 71px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04) !important;
+}
+
+.contact-form .wpforms-field-medium {
+    height: 237px !important;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04) !important;
+}
+
+.contact-form-button { 
+    font-size: 15px !important;
+    width: 198px !important;
+    height: 55px !important;
+    /* padding: 9px 72px 9px 72px !important; */
+    margin-left: 87px !important;
+    margin-right: 87px !important;
+    margin-top: -15px !important;
+}
+
+
+.planty-equipe {
+    padding-right: 170px;
+    padding-left: 170px;
+    background-color: white;
+}
+
+.rencontre-plante-titre {
+    width: 200px;
+    height: 200px;
+    margin-left: 150px;
+    margin-bottom: -70px;
+}
+
+.rencontre-plante-equipe {
+    width: 190px;
+    height: 220px;
+}
+
+.test-img {
+margin-right: 60px;
+margin-top: -225px;
+/* width: 120px; */
+}
+
+.rencontre-paragraphe {
+    width: 670px;
+    margin: auto;
+}
+
+
+/* "NOUS CONTACTER" */
+.informations-contacter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 53px;
+    margin: auto;
+}
+
+.informations-contacter label {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0px;
+}
+
+.informations-contacter .label-form {
+    width: 100%;
+    width: 380px;
+    height: 71px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    border: none;
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+.informations-contacter .label-form-area-contacter {
+    width: 100%;
+    width: 380px;
+    height: 71px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    border: none;
+    margin-top: 13px;
+    font-size: 20px;
+    height: 237px;
+}
+
+.contacter-titre {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+}
+
+
+.votre-message {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.boutton-message {
+    width: 198px;
+    height: 55px;
+    background-color: #E0B9B4;
+    border-radius: 5px !important;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 44px;
+    margin: 0 auto;
+    display: block;
+}
+
+.boutton-message:hover {
+    background-color: #C02E44;
+}
+
+.label-contacter {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+
+
+/* RESPONSIVE UNIQUEMENT */
+@media screen and (max-width: 670px) {
+    .rencontre-paragraphe {
+        width: auto;
+        margin: 0px 10px;
+        text-align: center;
+    }
+
+    .planty-equipe {
+        padding-right: 0px;
+        padding-left: 0px;
+        background-color: white;}}
+
+
+@media screen and (max-width: 475px) {
+    .nous-rencontrer-titre {
+        font-size: 32px !important;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    p.text-contacter {
+        margin: 12px 35px;
+    }
+
+    .nous-rencontrer-titre {
+        font-size: 25px !important;
+        text-align: center;
+        
+    }
+
+    .informations-contacter .label-form-area-contacter {
+        width: 80%;
+        height: 71px;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+        border-radius: 7px;
+        border: none;
+        margin-top: 13px;
+        font-size: 20px;
+        height: 237px;
+        margin: 0 auto;
+        display: block;
+
+}
+
+.informations-contacter .label-form {
+    
+    height: 71px;
+    width: 80%;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    border: none;
+    margin-top: 13px;
+    font-size: 20px;
+    margin: 0 auto;
+    display:block;
+}
+}
+
+@media screen and (max-width: 350px) {
+
+.rencontre-plante-titre {
+    display: none;
+}
+}
