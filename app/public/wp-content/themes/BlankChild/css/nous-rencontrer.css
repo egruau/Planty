@@ -1,104 +1,80 @@
-/* NOUS RENCONTRER */
+/* NOUS RENCONTRER/PRESENTATION */
 
-p.text-contacter {
-    color: #000;
-}
-
-.rencontre-paragraphe {
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
-
-.equipe-nom {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.equipe-complete {
-    padding-top: 46px;
-    padding-bottom: 80px;
-}
-
-.nous-contacter {
-    padding-top: 50px;
-}
 
 .nous-rencontrer-titre {
-    padding-top: 80px;
+    position: relative;
+    z-index: 1;
 }
 
-.contact-form {
-    display: flex;
-    justify-content: center;
+.nous-rencontrer-paragraphe {
+    max-width: 669px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
-.contact-form .wpforms-field-label {
-    font-size: 20px !important;
-    font-weight: 400;
+.nous-rencontrer-titre-image {
+    width: 160px;
+    position: relative;
+    top: 71px;
+    left: 141px;
+    z-index: 0;
 }
 
-.wpforms-container .wpforms-required-label { 
-    display: none;
+/* L'EQUIPE */
+.planty-equipe-titre {
+background-color: white;
 }
 
-/* div.wpforms-container-full input[type=text] {
-    width: 380px;
-    height: 71px;
-    
-} */
-.contact-form .wpforms-field-large {
-    /* width: 380px; */
-    height: 71px;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04) !important;
-}
-
-.contact-form .wpforms-field-medium {
-    height: 237px !important;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04) !important;
-}
-
-.contact-form-button { 
-    font-size: 15px !important;
-    width: 198px !important;
-    height: 55px !important;
-    /* padding: 9px 72px 9px 72px !important; */
-    margin-left: 87px !important;
-    margin-right: 87px !important;
-    margin-top: -15px !important;
-}
-
-
-.planty-equipe {
-    padding-right: 170px;
-    padding-left: 170px;
+.planty-equipe-membres {
     background-color: white;
 }
 
-.rencontre-plante-titre {
-    width: 200px;
-    height: 200px;
-    margin-left: 150px;
-    margin-bottom: -70px;
+.planty-equipe-membres .wp-block-group__inner-container {
+position: relative;
+display: flex;
+flex-direction: row; 
+justify-content: space-evenly;
+padding-top: 52px;
+padding-bottom: 80px;
+z-index: 1;
 }
 
-.rencontre-plante-equipe {
-    width: 190px;
-    height: 220px;
+.planty-equipe-image {
+    position: relative;
+    bottom: 224px;
+    right: 30px;
+    z-index: 0;
 }
 
-.test-img {
-margin-right: 60px;
-margin-top: -225px;
-/* width: 120px; */
-}
+/* FORMULAIRE DE CONTACT */
 
-.rencontre-paragraphe {
-    width: 670px;
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 860px;
+    width: 100%;
     margin: auto;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
+.votre-message {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
-/* "NOUS CONTACTER" */
+.contacter-titre {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+}
+
 .informations-contacter {
     display: flex;
     flex-direction: row;
@@ -120,8 +96,7 @@ margin-top: -225px;
 }
 
 .informations-contacter .label-form {
-    width: 100%;
-    width: 380px;
+    max-width: 380px;
     height: 71px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
     border-radius: 7px;
@@ -131,8 +106,7 @@ margin-top: -225px;
 }
 
 .informations-contacter .label-form-area-contacter {
-    width: 100%;
-    width: 380px;
+    max-width: 380px;
     height: 71px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
     border-radius: 7px;
@@ -140,22 +114,6 @@ margin-top: -225px;
     margin-top: 13px;
     font-size: 20px;
     height: 237px;
-}
-
-.contacter-titre {
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    color: black;
-}
-
-
-.votre-message {
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .boutton-message {
@@ -178,23 +136,45 @@ margin-top: -225px;
 .label-contacter {
     font-size: 20px;
     font-weight: 400;
-    color: black;
+    color: black;
+}
+
+.formulaire-contact-image {
+    z-index: 0;
+    position: relative;
+    bottom: 236px;
+    right: 190px;
 }
 
 
-
 /* RESPONSIVE UNIQUEMENT */
-@media screen and (max-width: 670px) {
-    .rencontre-paragraphe {
-        width: auto;
-        margin: 0px 10px;
-        text-align: center;
+
+@media screen and (max-width: 1200px) {
+    .nous-rencontrer-titre-image {
+        display: none;
     }
 
-    .planty-equipe {
-        padding-right: 0px;
-        padding-left: 0px;
-        background-color: white;}}
+    .nous-rencontrer-titre {
+        padding-top: 165px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .planty-equipe-membres .wp-block-group__inner-container {
+    flex-direction: column; 
+    row-gap: 40px;
+    padding-bottom: 40px;
+    }
+
+    .formulaire-contact-image {
+        display: none;
+    }
+
+    .planty-equipe-image {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 475px) {
@@ -205,11 +185,11 @@ margin-top: -225px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
 
-    p.text-contacter {
+    /* p.text-contacter {
         margin: 12px 35px;
-    }
+    } */
 
     .nous-rencontrer-titre {
         font-size: 25px !important;
@@ -217,37 +197,13 @@ margin-top: -225px;
         
     }
 
-    .informations-contacter .label-form-area-contacter {
-        width: 80%;
-        height: 71px;
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-        border-radius: 7px;
-        border: none;
-        margin-top: 13px;
-        font-size: 20px;
-        height: 237px;
-        margin: 0 auto;
-        display: block;
 
-}
+    .formulaire-contact .label-form {
+        width: 300px;
+        }
 
-.informations-contacter .label-form {
-    
-    height: 71px;
-    width: 80%;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-    border-radius: 7px;
-    border: none;
-    margin-top: 13px;
-    font-size: 20px;
-    margin: 0 auto;
-    display:block;
-}
-}
+    .formulaire-contact .label-form-area-contacter {
+        width: 300px;
+    }
 
-@media screen and (max-width: 350px) {
-
-.rencontre-plante-titre {
-    display: none;
-}
 }
