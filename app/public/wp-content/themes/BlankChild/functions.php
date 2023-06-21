@@ -42,15 +42,20 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 	add_filter( 'body_class', 'custom_body_class' );
 
 
-	// function remove_group_inner_container_div() {
-	// 	// Check if Gutenberg is active
-	// 	if ( function_exists( 'register_block_type' ) ) {
-	// 		// Remove the wp-block-group__inner-container wrapper
-	// 		add_filter( 'render_block_core/group', function( $block_content, $block ) {
-	// 			$block_content = str_replace( '<div class="wp-block-group__inner-container">', '', $block_content );
-	// 			$block_content = str_replace( '</div></div>', '</div>', $block_content );
-	// 			return $block_content;
-	// 		}, 10, 2 );
-	// 	}
-	// }
-	// add_action( 'init', 'remove_group_inner_container_div' );
+// Hook lien d'administration //
+function add_admin_link_to_menu($items, $args) {
+    if (is_user_logged_in() && $args->theme_location == 'primary_menu') {
+        $admin_link = '<li class="menu-item"><a href="' . admin_url() . '">Admin</a></li>';
+        
+        // Convertir la chaîne d'éléments en tableau
+        $items_array = explode('</li>', $items);
+        
+        // Insérer le lien d'administration à la deuxième position
+        array_splice($items_array, 1, 0, $admin_link);
+        
+        // Rejoindre les éléments du tableau en une seule chaîne
+        $items = implode('</li>', $items_array);
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
