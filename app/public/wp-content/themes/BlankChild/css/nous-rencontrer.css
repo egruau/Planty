@@ -10,7 +10,7 @@
     max-width: 669px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 100px;
+    line-height: 25px;
 }
 
 .nous-rencontrer-titre-image {
@@ -24,6 +24,7 @@
 /* L'EQUIPE */
 .planty-equipe-titre {
     background-color: white;
+    padding-top: 50px;
 }
 
 .planty-equipe-membres {

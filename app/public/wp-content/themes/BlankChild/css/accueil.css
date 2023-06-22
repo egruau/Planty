@@ -33,8 +33,9 @@
 }
 
 .energie-plantes-texte {
-    max-width: 490px;
+    max-width: 425px;
     margin: auto;
+    line-height: 25px;
 }
 
 
