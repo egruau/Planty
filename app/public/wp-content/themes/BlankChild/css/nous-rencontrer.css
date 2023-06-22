@@ -23,7 +23,7 @@
 
 /* L'EQUIPE */
 .planty-equipe-titre {
-background-color: white;
+    background-color: white;
 }
 
 .planty-equipe-membres {
@@ -31,13 +31,13 @@ background-color: white;
 }
 
 .planty-equipe-membres .wp-block-group__inner-container {
-position: relative;
-display: flex;
-flex-direction: row; 
-justify-content: space-evenly;
-padding-top: 52px;
-padding-bottom: 80px;
-z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 52px;
+    padding-bottom: 80px;
+    z-index: 1;
 }
 
 .groupe-planty-equipe-image .wp-block-group__inner-container {
@@ -172,9 +172,9 @@ z-index: 1;
 @media screen and (max-width: 768px) {
 
     .planty-equipe-membres .wp-block-group__inner-container {
-    flex-direction: column; 
-    row-gap: 40px;
-    padding-bottom: 40px;
+        flex-direction: column;
+        row-gap: 40px;
+        padding-bottom: 40px;
     }
 
     .formulaire-contact-image {
@@ -191,7 +191,7 @@ z-index: 1;
     .nous-rencontrer-titre {
         font-size: 32px !important;
         text-align: center;
-        
+
     }
 }
 
@@ -204,13 +204,13 @@ z-index: 1;
     .nous-rencontrer-titre {
         font-size: 25px !important;
         text-align: center;
-        
+
     }
 
 
     .formulaire-contact .label-form {
         width: 300px;
-        }
+    }
 
     .formulaire-contact .label-form-area-contacter {
         width: 300px;

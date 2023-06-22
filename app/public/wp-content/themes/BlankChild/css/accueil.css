@@ -24,7 +24,7 @@
 /* ENERGIE DES PLANTES */
 .energie-plantes-groupe {
     padding-top: 40px;
-    padding-bottom: 60px ;
+    padding-bottom: 60px;
 }
 
 .energie-plantes-groupe .wp-block-group__inner-container {
@@ -59,9 +59,9 @@
 
 #accueil-bannieres-gouts .wp-block-group__inner-container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
 }
 
 
@@ -97,7 +97,7 @@
 }
 
 #accueil-boutton-commande .wp-element-button:hover {
-    background-color: #C02E44 ;
+    background-color: #C02E44;
 }
 
 
@@ -134,7 +134,7 @@
         font-size: 38px;
     }
 
-    #accueil-avis-groupe .wp-block-group__inner-container{
+    #accueil-avis-groupe .wp-block-group__inner-container {
         flex-direction: column;
         justify-content: center;
     }
@@ -185,4 +185,3 @@
     }
 
 }
-
